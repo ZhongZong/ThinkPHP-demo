@@ -1,0 +1,762 @@
+[ 2016-11-16T19:04:19+08:00 ] 127.0.0.1 /cafuc/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.035592s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.056188s ]
+SQL: SHOW COLUMNS FROM `web_news` [ RunTime:1.072170s ]
+SQL: SELECT * FROM `web_news` ORDER BY time desc LIMIT 8   [ RunTime:0.021112s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.377255s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.377618s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.060474s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.010658s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001330s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001712s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.074763s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001798s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002030s ]
+
+[ 2016-11-16T19:04:20+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Login/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.018704s ]
+INFO: [ route_check ] --END-- [ RunTime:0.018904s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000645s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000778s ]
+
+[ 2016-11-16T19:04:32+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Login/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000867s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001015s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000717s ]
+SQL: SHOW COLUMNS FROM `web_users` [ RunTime:0.069686s ]
+SQL: SELECT * FROM `web_users` WHERE ( `username` = 'admin' ) ORDER BY id desc LIMIT 1   [ RunTime:0.017696s ]
+SQL: INSERT INTO `web_users` (`username`,`password`,`logintime`,`date`,`loginip`) VALUES ('admin','e10adc3949ba59abbe56e057f20f883e',1479294272,'2016-11-16','127.0.0.1') [ RunTime:0.005020s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.051676s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051872s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000493s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000455s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000289s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000501s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002024s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000550s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000645s ]
+
+[ 2016-11-16T19:04:33+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000682s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000549s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000661s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.066711s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066849s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000431s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000425s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000278s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000532s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001930s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000558s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000650s ]
+
+[ 2016-11-16T19:04:37+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Index/upnews.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000670s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046153s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046295s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000633s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000420s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000293s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000618s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002227s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000571s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000665s ]
+
+[ 2016-11-16T19:04:51+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Index/news_check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001363s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001592s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001022s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001259s ]
+SQL: SHOW COLUMNS FROM `web_news` [ RunTime:0.003401s ]
+SQL: INSERT INTO `web_news` (`title`,`content`,`partnews`,`source`,`author`,`imgname`,`imgpath`,`time`) VALUES ('1','1','1','1','1','582c3d5314fa7.png','./Public/Uploads/news/',1479294291) [ RunTime:0.002297s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008247s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000501s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000513s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000455s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000654s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002413s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000782s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000874s ]
+
+[ 2016-11-16T19:04:52+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Index/upnews.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001622s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001852s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001529s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011231s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011376s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000535s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000478s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000321s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000568s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002201s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000648s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000758s ]
+
+[ 2016-11-16T19:04:54+08:00 ] 127.0.0.1 /cafuc/index.php/Index/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001185s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001355s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000599s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000714s ]
+SQL: SHOW COLUMNS FROM `web_news` [ RunTime:0.003540s ]
+SQL: SELECT * FROM `web_news` ORDER BY time desc LIMIT 8   [ RunTime:0.000781s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019307s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000630s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000452s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000321s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002170s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000548s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000639s ]
+
+[ 2016-11-16T19:04:54+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Login/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001364s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001628s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+
+[ 2016-11-16T19:04:59+08:00 ] 127.0.0.1 /cafuc/index.php/Index/Index/details/id/28.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001256s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001542s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `web_news` [ RunTime:0.003097s ]
+SQL: SELECT * FROM `web_news` WHERE ( `id` = 28 ) LIMIT 1   [ RunTime:0.024970s ]
+SQL: UPDATE `web_news` SET `title`='1',`content`='1',`time`=1479294291,`source`='1',`author`='1',`imgname`='582c3d5314fa7.png',`imgpath`='./Public/Uploads/news/',`click`=1,`partnews`='1' WHERE ( `id` = 28 ) [ RunTime:0.015034s ]
+SQL: SELECT * FROM `web_news` WHERE ( id=28 )  [ RunTime:0.001027s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.115464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.115829s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001260s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001182s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000800s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001427s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005442s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001580s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001857s ]
+
+[ 2016-11-16T19:22:11+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Login/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001238s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001472s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001253s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001448s ]
+SQL: SHOW COLUMNS FROM `web_users` [ RunTime:0.142118s ]
+SQL: SELECT * FROM `web_users` WHERE ( `username` = 'admin' ) ORDER BY id desc LIMIT 1   [ RunTime:0.001427s ]
+SQL: INSERT INTO `web_users` (`username`,`password`,`logintime`,`date`,`loginip`) VALUES ('admin','e10adc3949ba59abbe56e057f20f883e',1479295331,'2016-11-16','127.0.0.1') [ RunTime:0.002325s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021740s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001251s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001287s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000978s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006728s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002361s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002705s ]
+
+[ 2016-11-16T19:22:25+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001501s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001742s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001357s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.221598s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.222109s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001682s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001688s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001216s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001924s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007667s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002339s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002726s ]
+
+[ 2016-11-16T19:22:30+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Index/logininfo.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001880s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002115s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001645s ]
+SQL: SHOW COLUMNS FROM `web_users` [ RunTime:0.008652s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `web_users` ORDER BY logintime desc LIMIT 1   [ RunTime:0.001081s ]
+SQL: SELECT * FROM `web_users` ORDER BY logintime desc LIMIT 0,10   [ RunTime:0.001273s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.055077s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055465s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001528s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001172s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000629s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000959s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004844s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001191s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001361s ]
+
+[ 2016-11-16T19:22:31+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Graph/graph3.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000738s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000875s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `web_users` [ RunTime:0.004477s ]
+SQL: SELECT * FROM `web_users` ORDER BY logintime desc LIMIT 1   [ RunTime:0.000497s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `web_users` WHERE ( date='2016-11-16' ) LIMIT 1   [ RunTime:0.001312s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `web_users` WHERE ( date='2016-11-15' ) LIMIT 1   [ RunTime:0.000686s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `web_users` WHERE ( date='2016-11-14' ) LIMIT 1   [ RunTime:0.000532s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `web_users` WHERE ( date='2016-11-13' ) LIMIT 1   [ RunTime:0.000466s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `web_users` WHERE ( date='2016-11-12' ) LIMIT 1   [ RunTime:0.000341s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `web_users` WHERE ( date='2016-11-11' ) LIMIT 1   [ RunTime:0.000280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `web_users` WHERE ( date='2016-11-10' ) LIMIT 1   [ RunTime:0.000307s ]
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6425 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6425 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6425 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6425 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6425 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6425 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6425 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6425 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6097 行.
+NOTIC: [8192] Function split() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6142 行.
+NOTIC: [8192] Function ereg() is deprecated D:\wamp\www\cafuc\ThinkPHP\Extend\Vendor\Jpgraph\jpgraph.php 第 6293 行.
+
+[ 2016-11-16T19:22:32+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Index/upnews.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003713s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003956s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003442s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028454s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028598s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001620s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001451s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001314s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006285s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001585s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001684s ]
+
+[ 2016-11-16T19:22:34+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Index/newslist.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.003562s ]
+INFO: [ route_check ] --END-- [ RunTime:0.003797s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003416s ]
+SQL: SHOW COLUMNS FROM `web_news` [ RunTime:0.062123s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `web_news` LIMIT 1   [ RunTime:0.002048s ]
+SQL: SELECT * FROM `web_news` ORDER BY time desc LIMIT 0,11   [ RunTime:0.001851s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.150060s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.150455s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.006021s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.005553s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.004877s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.003948s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021298s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.003725s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003936s ]
+
+[ 2016-11-16T19:22:37+08:00 ] 127.0.0.1 /cafuc/index.php/Index/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001882s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002022s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001550s ]
+SQL: SHOW COLUMNS FROM `web_news` [ RunTime:0.003307s ]
+SQL: SELECT * FROM `web_news` ORDER BY time desc LIMIT 8   [ RunTime:0.000906s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034770s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034905s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001379s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001125s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000988s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001208s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004969s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001287s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001401s ]
+
+[ 2016-11-16T19:22:37+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Login/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001183s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001331s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002782s ]
+
+[ 2016-11-16T19:22:38+08:00 ] 127.0.0.1 /cafuc/index.php/Index/Index/details/id/28.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001799s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001952s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001356s ]
+SQL: SHOW COLUMNS FROM `web_news` [ RunTime:0.004156s ]
+SQL: SELECT * FROM `web_news` WHERE ( `id` = 28 ) LIMIT 1   [ RunTime:0.000478s ]
+SQL: UPDATE `web_news` SET `title`='1',`content`='1',`time`=1479294291,`source`='1',`author`='1',`imgname`='582c3d5314fa7.png',`imgpath`='./Public/Uploads/news/',`click`=2,`partnews`='1' WHERE ( `id` = 28 ) [ RunTime:0.002107s ]
+SQL: SELECT * FROM `web_news` WHERE ( id=28 )  [ RunTime:0.000312s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016280s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016416s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001214s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001117s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000972s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005160s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001419s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001536s ]
+
+[ 2016-11-16T19:22:49+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Index/delete_news/id/28.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001459s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001613s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002090s ]
+SQL: SHOW COLUMNS FROM `web_news` [ RunTime:0.003396s ]
+SQL: DELETE FROM `web_news` WHERE ( id=28 ) [ RunTime:0.002309s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011906s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012060s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001136s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001126s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001076s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001341s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005003s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001289s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001405s ]
+
+[ 2016-11-16T19:22:50+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Index/newslist.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001665s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001813s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001401s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001535s ]
+SQL: SHOW COLUMNS FROM `web_news` [ RunTime:0.004170s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `web_news` LIMIT 1   [ RunTime:0.000357s ]
+SQL: SELECT * FROM `web_news` ORDER BY time desc LIMIT 0,11   [ RunTime:0.000789s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021920s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022064s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001475s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001383s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001140s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001389s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005729s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001465s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001576s ]
+
+[ 2016-11-16T19:22:52+08:00 ] 127.0.0.1 /cafuc/index.php/Index/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001207s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000930s ]
+SQL: SHOW COLUMNS FROM `web_news` [ RunTime:0.003789s ]
+SQL: SELECT * FROM `web_news` ORDER BY time desc LIMIT 8   [ RunTime:0.000751s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030807s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030996s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000626s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000506s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000334s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002453s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000670s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000812s ]
+
+[ 2016-11-16T19:22:53+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Login/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001628s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001869s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001066s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001268s ]
+
+[ 2016-11-16T19:22:57+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Index/upnews.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001468s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001666s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000957s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001157s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031254s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031464s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000922s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000861s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000643s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000991s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003887s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000954s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001101s ]
+
+[ 2016-11-16T19:23:07+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Index/news_check.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000773s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000666s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `web_news` [ RunTime:0.003206s ]
+SQL: INSERT INTO `web_news` (`title`,`content`,`partnews`,`source`,`author`,`imgname`,`imgpath`,`time`) VALUES ('asdad','asdasd','asdasd','sdasd','asdsdasd','582c419b4d03e.png','./Public/Uploads/news/',1479295387) [ RunTime:0.002685s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.007910s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008062s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000528s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000537s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000402s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002388s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000674s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000770s ]
+
+[ 2016-11-16T19:23:09+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Index/upnews.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001207s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001436s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000759s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000888s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013694s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000520s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000517s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000345s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002394s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000671s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000795s ]
+
+[ 2016-11-16T19:23:09+08:00 ] 127.0.0.1 /cafuc/index.php/Index/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000795s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000756s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000926s ]
+SQL: SHOW COLUMNS FROM `web_news` [ RunTime:0.003590s ]
+SQL: SELECT * FROM `web_news` ORDER BY time desc LIMIT 8   [ RunTime:0.001106s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.022294s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022510s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000897s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000931s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000605s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000975s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003940s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000800s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000935s ]
+
+[ 2016-11-16T19:23:09+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Login/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001266s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001454s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001127s ]
+
+[ 2016-11-16T19:23:11+08:00 ] 127.0.0.1 /cafuc/index.php/Index/Index/details/id/29.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000713s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000840s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+SQL: SHOW COLUMNS FROM `web_news` [ RunTime:0.003450s ]
+SQL: SELECT * FROM `web_news` WHERE ( `id` = 29 ) LIMIT 1   [ RunTime:0.000780s ]
+SQL: UPDATE `web_news` SET `title`='asdad',`content`='asdasd',`time`=1479295387,`source`='sdasd',`author`='asdsdasd',`imgname`='582c419b4d03e.png',`imgpath`='./Public/Uploads/news/',`click`=1,`partnews`='asdasd' WHERE ( `id` = 29 ) [ RunTime:0.002603s ]
+SQL: SELECT * FROM `web_news` WHERE ( id=29 )  [ RunTime:0.000636s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.011376s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011512s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000525s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000442s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000326s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000549s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002143s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000661s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000798s ]
+
+[ 2016-11-16T19:24:01+08:00 ] 127.0.0.1 /cafuc/index.php/Index/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001121s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001317s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+SQL: SHOW COLUMNS FROM `web_news` [ RunTime:0.003543s ]
+SQL: SELECT * FROM `web_news` ORDER BY time desc LIMIT 8   [ RunTime:0.000624s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016307s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016436s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000617s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000479s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000325s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002241s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000840s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000999s ]
+
+[ 2016-11-16T19:24:01+08:00 ] 127.0.0.1 /cafuc/index.php/Admin/Login/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001590s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001781s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000894s ]
+

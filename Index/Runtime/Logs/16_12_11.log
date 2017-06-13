@@ -1,0 +1,107 @@
+[ 2016-12-11T23:26:59+08:00 ] 0.0.0.0 /cafuc/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.024432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.040736s ]
+SQL: SHOW COLUMNS FROM `web_news` [ RunTime:0.097687s ]
+SQL: SELECT * FROM `web_news` ORDER BY time desc LIMIT 8   [ RunTime:0.050256s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.232758s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.233074s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.053098s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.021803s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001988s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002935s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.081002s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002735s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003036s ]
+
+[ 2016-12-11T23:27:00+08:00 ] 0.0.0.0 /cafuc/index.php/Admin/Login/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.013728s ]
+INFO: [ route_check ] --END-- [ RunTime:0.013975s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000906s ]
+
+[ 2016-12-11T23:27:20+08:00 ] 0.0.0.0 /cafuc/index.php/Admin/Login/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001344s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001514s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000868s ]
+SQL: SHOW COLUMNS FROM `web_users` [ RunTime:0.085158s ]
+SQL: SELECT * FROM `web_users` WHERE ( `username` = 'admin\'--' ) ORDER BY id desc LIMIT 1   [ RunTime:0.085917s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.084950s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085514s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001867s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001945s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001523s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002337s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008738s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002495s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002894s ]
+
+[ 2016-12-11T23:27:21+08:00 ] 0.0.0.0 /cafuc/index.php/Admin/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001477s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001733s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001605s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.040535s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040784s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000905s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000887s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000651s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001084s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004134s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001230s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001439s ]
+
+[ 2016-12-11T23:27:21+08:00 ] 0.0.0.0 /cafuc/index.php/Admin/Login/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000821s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000964s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000830s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001036s ]
+
+[ 2016-12-11T23:27:31+08:00 ] 0.0.0.0 /cafuc/index.php/Index/Index/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001280s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001497s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001396s ]
+SQL: SHOW COLUMNS FROM `web_news` [ RunTime:0.004080s ]
+SQL: SELECT * FROM `web_news` ORDER BY time desc LIMIT 8   [ RunTime:0.000723s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020191s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000747s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000506s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000328s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000585s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002500s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000616s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000724s ]
+
+[ 2016-12-11T23:27:31+08:00 ] 0.0.0.0 /cafuc/index.php/Admin/Login/verify.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001679s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001913s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000655s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000802s ]
+

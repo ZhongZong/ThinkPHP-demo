@@ -1,5 +1,5 @@
 #Ignore Cache file
-Index/Runtime/Logs/*
+#Index/Runtime/Logs/*
 Index/Runtime/Cache/*
 Index/Runtime/Data/*
 #Index/Runtime/Temp/*
