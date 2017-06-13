@@ -1,5 +1,2 @@
-#Ignore Cache file
-Index/Runtime/Logs
-Index/Runtime/Cache
-Index/Runtime/Data
-Index/Runtime/Temp
+#Ignore Runtime file
+Index/Runtime
