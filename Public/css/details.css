@@ -1,0 +1,40 @@
+.contain{
+	height: auto;
+}
+.contain .details{
+	position: relative;
+	width: 780px;
+	height: auto;
+}
+.contain .newlist .details h2{
+	font-weight: bolder;
+	text-align: center;
+	font-size: 24px;
+}
+.contain .newlist .details p{
+	text-align: center;
+}
+.contain .newlist .details p span{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.contain .newlist .details p.font{
+	text-align: right;
+}
+.contain .newlist .details p.font span{
+	font-size: 12px;
+}
+.contain .zhengwen{
+	white-space: pre-wrap;
+}
+.contain .newlist .details p.dayin{
+	text-align: right;
+	font-size: 16px;
+	font-weight: bold;
+}
+.contain .newlist .details p.dayin a{
+	color: #000;
+}
+.contain .newlist .details p.dayin a:hover{
+	color: #627FBE;
+}

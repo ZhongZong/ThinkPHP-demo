@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>中国民航飞行学院</title>
+	<link rel="icon" href="__PUBLIC__/images/Index/cafuc.ico" type="image/x-icon">
+	<link rel="stylesheet" href="__PUBLIC__/css/iconfont.css">
+	<link rel="shortcut icon" href="__PUBLIC__/images/Index/cafuc.ico" type="image/x-icon">
+	<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/Index.css">
+	<script src="__PUBLIC__/js/login.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/index.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js"></script>
+	<script type="text/javascript">var verifyURL='{:U("Admin/Login/verify",'','')}'</script>
+	<script>
+	function check(){
+				if(myform.username.value==""){
+					alert('帐号不能为空！');
+					myform.username.focus();
+					return false;
+				}
+				if(myform.password.value==""){
+					alert('密码不为空');
+					myform.password.focus();
+					return false;
+				}
+				if(myform.verify.value==""){
+					alert('验证码不为空');
+					myform.verify.focus();
+					return false;
+				}
+				return true;
+	}
+	</script>
+</head>
+<body >
+	<div class="Box"  style="background:url('__PUBLIC__/images/Index/abg.jpg') no-repeat;background-position:0px 100px;">
+		
+		<div class="topBox"><!--头部开始 href="{:U('Admin/Login/index')}" -->
+
+			<div class="header">
+
+				<a href="{:U('Index/Index/index')}"><img src="__PUBLIC__/images/Index/logo.png" alt=""></a>
+				<a id='login' href="#" data-toggle="modal" data-target="#about"><img class="xnw" src="__PUBLIC__/images/Index/xnw_img.png" alt=""></a>
+				<form class="form" action="{:U('Index/Index/Search')}" method="post">
+					<input class="input" type="text" name="search" placeholder="请输入关键字">
+					<input type="submit" class="submit" value="搜索">
+				</form>
+				<div class="top-link">
+					<ul>
+						<li><a href="">信息公开</a></li>
+						<li style="margin-left:7px;width:18px;color:white;line-height:21px;">|</li>
+						<li><a href="">ENGLISH</a></li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div><!--头部结束-->
+		
+	
+		<div class="nav"><!--导航开始-->
+			<div class="navlist">
+				<ul>
+					<li><a href="{:U('Index/Index/index')}">首页</a></li>
+					<li onmouseover="showsumenu(this)" onmouseout="hiddenmenu(this)"><a href="">学校概况</a>
+						<ul id="nav2" onmouseover="show(this)" onmouseout="hidden(this)">
+							<li><a href="">学校简介</a><img src="__PUBLIC__/images/Index/icon-arrow.png" alt=""></li>
+							<li><a href="">学校领导</a><img src="__PUBLIC__/images/Index/icon-arrow.png" alt=""></li>
+							<li><a href="">领导致辞</a><img src="__PUBLIC__/images/Index/icon-arrow.png" alt=""></li>
+							<li><a href="">校区风貌</a><img src="__PUBLIC__/images/Index/icon-arrow.png" alt=""></li>
+							<li><a href="">训练机型</a><img src="__PUBLIC__/images/Index/icon-arrow.png" alt=""></li>
+							<li><a href="">校园文化</a><img src="__PUBLIC__/images/Index/icon-arrow.png" alt=""></li>
+						</ul>
+					</li>
+					<li onmouseover="showsumenu(this)" onmouseout="hiddenmenu(this)"><a href="">院系部门</a>
+						<ul id="nav2" onmouseover="show(this)" onmouseout="hidden(this)">
+							<li><a href="">学院</a><img src="__PUBLIC__/images/Index/icon-arrow.png" alt=""></li>
+							<li><a href="">部门</a><img src="__PUBLIC__/images/Index/icon-arrow.png" alt=""></li>
+						</ul>
+					</li>
+					<li><a href="">专业介绍</a></li>
+					<li onmouseover="showsumenu(this)" onmouseout="hiddenmenu(this)"><a href="">招生就业</a>
+					<ul id="nav2" onmouseover="show(this)" onmouseout="hidden(this)">
+							<li><a href="">研究生招生</a><img src="__PUBLIC__/images/Index/icon-arrow.png" alt=""></li>
+							<li><a href="">本专科招生</a><img src="__PUBLIC__/images/Index/icon-arrow.png" alt=""></li>
+							<li><a href="">继续教育招生</a><img src="__PUBLIC__/images/Index/icon-arrow.png" alt=""></li>
+							<li><a href="">学生就业</a><img src="__PUBLIC__/images/Index/icon-arrow.png" alt=""></li>
+					</ul>
+					</li>
+					<li onmouseover="showsumenu(this)" onmouseout="hiddenmenu(this)"><a href="">交流合作</a>
+					<ul id="nav2" onmouseover="show(this)" onmouseout="hidden(this)">
+							<li><a href="">办学合作</a><img src="__PUBLIC__/images/Index/icon-arrow.png" alt=""></li>
+							<li><a href="">国际交流</a><img src="__PUBLIC__/images/Index/icon-arrow.png" alt=""></li>
+					</ul>
+					</li>
+					<li onmouseover="showsumenu(this)" onmouseout="hiddenmenu(this)"><a href="">科学研究</a>
+					<ul id="nav2" onmouseover="show(this)" onmouseout="hidden(this)">
+							<li><a href="">科研基地</a><img src="__PUBLIC__/images/Index/icon-arrow.png" alt=""></li>
+							<li><a href="">飞院学报</a><img src="__PUBLIC__/images/Index/icon-arrow.png" alt=""></li>
+							<li><a href="">科研成果</a><img src="__PUBLIC__/images/Index/icon-arrow.png" alt=""></li>
+					</ul>
+					</li>
+					<li><a href="{:U('Index/Index/files')}">文件下载</a></li>
+					<li style="border:none;"><a href="{:U('Index/Index/messages')}">联系我们</a></li>
+				</ul>
+			</div>
+		</div><!--导航结束-->
+
+		<div id="container">
+    		<div id="list" style="left: -1000px;">
+       		<img src="__PUBLIC__/images/Banner/banner6.jpg" alt="1"/>
+        	<img src="__PUBLIC__/images/Banner/banner1.jpg" alt="1"/>
+        	<img src="__PUBLIC__/images/Banner/banner2.jpg" alt="2"/>
+        	<img src="__PUBLIC__/images/Banner/banner3.jpg" alt="3"/>
+        	<img src="__PUBLIC__/images/Banner/banner4.jpg" alt="4"/>
+        	<img src="__PUBLIC__/images/Banner/banner5.jpg" alt="5"/>
+        	<img src="__PUBLIC__/images/Banner/banner6.jpg" alt="6"/>
+        	<img src="__PUBLIC__/images/Banner/banner1.jpg" alt="6"/>
+    		</div>
+    		<div id="buttons">
+        	<span index="1" class="on"></span>
+        	<span index="2"></span>
+        	<span index="3"></span>
+        	<span index="4"></span>
+        	<span index="5"></span>
+        	<span index="6"></span>
+    		</div>
+    		<a href="javascript:;" id="prev" class="arrow">&lt;</a>
+    		<a href="javascript:;" id="next" class="arrow">&gt;</a>
+		</div>
+
+		<div class="mainBox"><!--新闻开始-->
+
+			<div class="mainLeft"><!--通知公告开始-->
+				<div class="top">
+					<div class="title" style="background:url('__PUBLIC__/images/Index/nav_bg.png');">通知公告</div>
+					<div class="more"><a href="{:U('Index/Index/tongzhi')}">更多>></a></div>
+				</div>
+				<div class="news">
+					<ul>
+						<foreach name="news" item="v">
+						<li style="background:url('__PUBLIC__/images/Index/dian.gif') no-repeat;background-position:0px 17px;"><span>[{$v.time|date='m-d',###}]</span><a href="{:U('Index/Index/details',array('id'=>$v['id']))}" target="_blank">{$v.title}</a></li>
+						</foreach>
+					</ul>
+				</div>
+			</div><!--通知公告结束-->
+
+			<div class="mainMid"><!--学院要闻开始-->
+				<div class="top">
+					<div class="title" style="background:url('__PUBLIC__/images/Index/nav_bg.png');">学校要闻</div>
+					<div class="more"><a href="{:U('Index/Index/tongzhi')}">更多>></a></div>
+				</div>
+				<div class="news">
+					<ul>
+						<foreach name="news" item="v">
+						<li style="background:url('__PUBLIC__/images/Index/dian.gif') no-repeat;background-position:0px 17px;"><span>[{$v.time|date='m-d',###}]</span><a href="{:U('Index/Index/details',array('id'=>$v['id']))}" target="_blank">{$v.title}</a></li>
+						</foreach>
+					</ul>
+				</div>
+			</div><!--学校要闻结束-->
+
+			<div class="mainRight">
+				<div class="top">
+					<div class="title" style="background:url('__PUBLIC__/images/Index/nav_bg.png');">快速导航</div>
+				</div>
+				<div class="news" >
+					<ul>
+						<li style="background:url('__PUBLIC__/images/Index/dh_link_ico.png') no-repeat;background-position:0px 17px;"><a href="">飞行执照考试 </a></li>
+						<li style="background:url('__PUBLIC__/images/Index/dh_link_ico.png') no-repeat;background-position:0px 17px;"><a href="">飞行英语考试 </a></li>
+						<li style="background:url('__PUBLIC__/images/Index/dh_link_ico.png') no-repeat;background-position:0px 17px;"><a href="">空管英语考试</a></li>
+						<li style="background:url('__PUBLIC__/images/Index/dh_link_ico.png') no-repeat;background-position:0px 17px;"><a href="">本科教学工程</a></li>
+						<li style="background:url('__PUBLIC__/images/Index/dh_link_ico.png') no-repeat;background-position:0px 17px;"><a href="">本科教学工程</a></li>
+					</ul>
+				</div>
+				<div class="zt">
+					<img src="__PUBLIC__/images/Index/zt_01.jpg" alt="">
+				</div>
+			</div>
+
+		</div><!--新闻结束-->
+		
+		<div class="link"><!--图片链接开始-->
+			<img src="__PUBLIC__/images/Index/xueyuan.png" alt="">
+			<a href=""><img src="__PUBLIC__/images/Index/danwei.png" alt=""></a>
+			<a href=""><img src="__PUBLIC__/images/Index/youjian.png" alt=""></a>
+			<a href=""><img src="__PUBLIC__/images/Index/shuzi.png" alt=""></a>
+			<a href=""><img src="__PUBLIC__/images/Index/yuanbao.png" alt=""></a>
+		</div><!--图片链接结束-->
+		
+		<div class="link2"><!--底部链接开始-->
+			<div class="linkleft">友情链接
+				<select name="" id="" class="ziyuan">
+					<option selected="selected" value="">--资源导航--</option>
+					<option value="">本科教学工程</option>
+				</select>
+				<select name="" id="" class="chang">
+					<option selected="selected" value="">--常用链接--</option>
+					<option value="">中国民用航空局</option>
+					<option value="">中国民航新闻信息网</option>
+					<option value="">中国航空安全自愿报告系统</option>
+					<option value="">中国航空人才在线</option>
+					<option value="">中国民用航空网</option>
+					<option value="">中国航空英才网</option>
+					<option value="">航空航天英才网</option>
+				</select>
+			</div>
+			<div class="linkright">
+				<ul>
+					<li class="weibo" onmouseover="showsumenu(this)" onmouseout="hiddenmenu(this)"><a href=""><img src="__PUBLIC__/images/Index/weibo.png" alt=""></a>
+					<ul class="erwei1"><li><img src="__PUBLIC__/images/Index/erwei1.jpg" alt=""></li></ul>
+					</li>
+					<li onmouseover="showsumenu(this)" onmouseout="hiddenmenu(this)"><a href=""><img src="__PUBLIC__/images/Index/weixin.png" alt=""></a>
+					<ul class="erwei2"><li><img src="__PUBLIC__/images/Index/erwei2.jpg" alt=""></li></ul>
+					</li>
+					<li><a href=""><img src="__PUBLIC__/images/Index/android.png" alt=""></a></li>
+					<li><a href=""><img src="__PUBLIC__/images/Index/apple.png" alt=""></a></li>
+				</ul>
+			</div>
+		</div><!--底部链接结束-->
+
+		<div class="foot"><!--版权开始-->
+			<div class="footer">
+				中国民航飞行学院 地址：四川省广汉市 邮政编码：618307<br>
+				中国民航飞行学院现教中心网络信息部制作 <span>蜀ICP备05031896号 </span>
+			</div>
+		</div><!--版权结束-->
+
+	</div><!--网页结束-->
+
+	
+	<!-- 弹出框 -->
+	<div class="modal fade" id="about">
+		<div class="modal-dialog" style="margin-top:20px;">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button class="close" type="button" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+					<h4 class="modal-title">管理员登录</h4>
+				</div>
+				<div class="modal-body">
+
+			<form name="myform" method='post' action="{:U('Admin/Login/login')}" class="form-horizontal" style="margin-left:100px;width:700px;">
+			  <div class="form-group">
+			    <label class="col-sm-2 control-label"> <span class="glyphicon glyphicon-user" aria-hidden="true"></span>帐号</label>
+			    <div class="col-sm-4">
+			      <input type="username" id="name" name="username" class="form-control" placeholder="帐号">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label class="col-sm-2 control-label"><i style="font-size:20px;" class="iconfont">&#xe669;</i>密码</label>
+			    <div class="col-sm-4">
+			      <input type="password" name="password" class="form-control" placeholder="密码">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label class="col-sm-2 control-label"><i class="iconfont">&#xe60b;</i>验证码</label>
+			    <div class="col-sm-2">
+			    <input type="text" name='verify' class="form-control" placeholder="验证码">
+			     <img style="margin-top:10px;" id='code' src="{:U('Admin/Login/verify')}" alt=""><a style="margin-left:-10px;margin-top:10px;" class="btn btn-link" href="javascript:void(change_code(this));">看不清</a>
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <div class="col-sm-offset-2 col-sm-4">
+			      <input type="submit" id="submit" class="btn btn-primary" onclick="return check();" value="登录"/>
+			      <a href="{:U('Index/Index/index')}" role="button" class="btn btn-success" style="float:right;">取消</a>
+			    </div>
+			  </div>
+			</form>
+				</div>
+				<!-- <div class="modal-footer">
+					<button class="btn btn-default" data-dismiss="modal">了解</button>
+				</div> -->
+			</div>
+		</div>	
+	</div>
+
+</body>
+</html>

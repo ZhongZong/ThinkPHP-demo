@@ -1,0 +1,462 @@
+*{
+	margin: 0px auto;
+	padding: 0px;
+}
+.Box{
+	position: relative;
+	width: 100%;
+	height: 917px;
+}
+.Box .topBox{
+	width: 100%;
+	height: 76px;
+	background-color: #F4FCFF;
+}
+.Box .topBox .header{
+	position: relative;
+	width: 1000px;
+	height: 76px;
+}
+.Box .topBox .header img{
+	display: block;
+	float: left;
+}
+.xnw{
+	margin-top: 20px;
+	margin-left: 50px;
+}
+form.form{
+	display: block;
+	float: left;
+	height: 76px;
+	width: 220px;
+	position: absolute;
+	margin: 0px 600px;
+}
+input.input{
+	border: 1px solid #1E7BC5;
+	width: 130px;
+	height: 26px;
+	margin:24px 10px;
+}
+input.submit{
+	font-size: 14px;
+	width: 58px;
+	height: 25px;
+	color: #FFF;
+	background-color: rgb(30, 123, 197);
+	border: 1px solid rgb(30, 123, 197);
+}
+.top-link{
+	line-height: 24px;
+	text-align: center;
+	background-color: #979797;
+	float: right;
+	width: 160px;
+	height: 24px;
+	margin: 25px 10px;
+	-moz-border-radius:4px 5px; /* Firefox */
+  	-webkit-border-radius:4px 5px; /* Safari 和 Chrome */
+	border-radius: 4px 5px;
+}
+.top-link ul{
+	list-style: none;
+}
+.top-link ul li{
+	display: inline-block;
+	text-align: center;
+	width: 60px;
+	float: left;
+}
+.top-link ul li a{
+	margin-left: 10px;
+	display: block;
+	text-align: center;
+	z-index: 999;
+	font-size: 12px;
+	text-decoration: none;
+	color: #FFF;
+}
+.top-link ul li a:hover{
+	color: red;
+}
+
+
+.nav{
+	z-index: 2;
+	width: 100%;
+	height: 33px;
+	background-color: #627FBE;
+}
+.nav .navlist{
+	
+	width: 1000px;
+	height: 33px;
+	margin: 0px auto;
+	background-color: #2E54A8;
+}
+.nav .navlist ul{
+	list-style: none;
+	width: 1000px;
+	height: 33px;
+}
+.nav .navlist ul li{
+	position: relative;
+	line-height: 33px;
+	padding: 0px;
+	float: left;
+	width: 109px;
+	height: 33px;
+	border-right: 1px solid #FFF;
+}
+.nav .navlist ul li a{
+	display: block;
+	text-align: center;
+	color: #FFF;
+	text-decoration: none;
+}
+.nav .navlist ul li a:hover{
+	color: #afd7e8;
+}
+.nav .navlist ul li ul{
+	filter:alpha(opacity:80);
+	opacity:0.8; 
+	display: none;
+	position: absolute;
+	width: 110px;
+	color: black;
+	z-index: 5;
+}
+.nav .navlist ul li ul li{
+	background-color:rgb(255,255,255);
+	border: none;
+	height: 25px;
+	float: none;
+}
+.nav .navlist ul li ul li a{
+	height: 25px;
+	border-top: 1px solid #eee;
+	line-height: 25px;
+	font-size: 12px;
+	display: block;
+	color: #000;
+}
+.nav .navlist ul li ul li a:hover{
+	color: #e30002;
+}
+.nav .navlist ul li ul li img{
+	float:right;
+	margin-top:-14px;
+	margin-right: 10px;
+}
+.banner{
+	width: 1000px;
+	height: 350px;
+	background-color: #005588;
+}
+
+#container { width: 1000px; height: 350px; overflow: hidden; position: relative;}
+#list { width: 7000px; height: 350px; position: absolute; z-index: 1;}
+#list img { float: left; width: 1000px;height: 350px;}
+#buttons { position: absolute; height: 10px; width: 100px; z-index: 2; bottom: 20px; left: 450px;}
+#buttons span { cursor: pointer; float: left; border: 1px solid #fff; width: 10px; height: 10px; border-radius: 50%; background: #333; margin-right: 5px;}
+#buttons .on {  background: orangered;}
+.arrow { cursor: pointer; display: none; line-height: 39px; text-align: center; font-size: 36px; font-weight: bold; width: 40px; height: 40px;  position: absolute; z-index: 2; top: 155px; background-color: RGBA(0,0,0,.3); color: #fff;}
+.arrow:hover { background-color: RGBA(0,0,0,.7);}
+#container:hover .arrow {text-decoration: none; display: block;}
+#prev { left: 20px;}
+#next { right: 20px;}
+
+.mainBox{
+	border-bottom: 1px dotted #ccc;
+	width: 1000px;
+	height: 313px;
+	position: relative;
+}
+.mainBox .mainLeft{
+	position: absolute;
+	width: 380px;
+	height: 312px;
+	background-color: #fff;
+}
+.mainBox .mainLeft .top{
+	width: 380px;
+	height: 31px;
+	border-bottom:1px solid #047dd2;
+}
+.mainBox .mainLeft .top .title{
+	width: 108px;
+	height: 31px;
+	float: left;
+	text-align: center;
+	line-height: 31px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #FFF;
+}
+.mainBox .mainLeft .top .more a{
+	color: #333;
+	display: block;
+	text-decoration: none;
+	float: right;
+	width: 60px;
+	height: 31px;
+	line-height: 31px;
+}
+.mainBox .mainLeft .top .more a:hover{
+	color: #047dd2;
+}
+.mainBox .mainLeft .news ul{
+list-style: none;
+}
+.mainBox .mainLeft .news ul li{
+	width: 350px;
+	display: block;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.mainBox .mainLeft .news ul li a{
+	margin-left: 5px;
+	position: relative;
+	display: block;
+	width: 290px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	color: #333;
+	font-size: 12px;
+	margin-top: 5px;
+	text-decoration: none;
+	line-height: 30px;
+	padding-left: 10px;
+
+}
+.mainBox .mainLeft .news ul li a:hover{
+	color: #047dd2;
+}
+.mainBox .mainLeft .news ul li span{
+	margin-top: 10px;
+	position: absolute;
+	width: 50px;
+	margin-left: 300px;
+}
+
+.mainBox .mainMid{
+	position: absolute;
+	margin-left: 400px;
+	width: 380px;
+	height: 312px;
+	background-color: #fff;
+}
+.mainBox .mainMid{
+	position: absolute;
+	width: 380px;
+	height: 312px;
+	background-color: #fff;
+}
+.mainBox .mainMid .top{
+	width: 380px;
+	height: 31px;
+	border-bottom:1px solid #047dd2;
+}
+.mainBox .mainMid .top .title{
+	width: 108px;
+	height: 31px;
+	float: left;
+	text-align: center;
+	line-height: 31px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #FFF;
+}
+.mainBox .mainMid .top .more a{
+	color: #333;
+	display: block;
+	text-decoration: none;
+	float: right;
+	width: 60px;
+	height: 31px;
+	line-height: 31px;
+}
+.mainBox .mainMid .top .more a:hover{
+	color: #047dd2;
+}
+.mainBox .mainMid .news ul{
+list-style: none;
+}
+.mainBox .mainMid .news ul li{
+	width: 350px;
+	display: block;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.mainBox .mainMid .news ul li a{
+	margin-left: 5px;
+	position: relative;
+	display: block;
+	width: 290px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	color: #333;
+	font-size: 12px;
+	margin-top: 5px;
+	text-decoration: none;
+	line-height: 30px;
+	padding-left: 10px;
+
+}
+.mainBox .mainMid .news ul li a:hover{
+	color: #047dd2;
+}
+.mainBox .mainMid .news ul li span{
+	margin-top: 10px;
+	position: absolute;
+	width: 50px;
+	margin-left: 300px;
+}
+
+.mainBox .mainRight{
+	position: absolute;
+	margin-left: 820px;
+	width: 180px;
+	height: 312px;
+	background-color: #fff;
+}
+.mainBox .mainRight .top{
+	width: 180px;
+	height: 31px;
+	border-bottom:1px solid #047dd2;
+}
+.mainBox .mainRight .top .title{
+	margin-left: 40px;
+	width: 108px;
+	height: 31px;
+	float: left;
+	text-align: center;
+	line-height: 31px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #FFF;
+}
+.mainBox .mainRight .news ul{
+list-style: none;
+}
+.mainBox .mainRight .news ul li{
+	border-bottom: 1px dotted #ccc;
+	width: 180px;
+	display: block;
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.mainBox .mainRight .news ul li a{
+	text-align: left;
+	margin-left: 5px;
+	position: relative;
+	display: block;
+	width: 180px;
+	white-space:nowrap;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	color: #333;
+	font-size: 12px;
+	margin-top: 5px;
+	text-decoration: none;
+	line-height: 30px;
+	padding-left: 10px;
+
+}
+.mainBox .mainRight .news ul li a:hover{
+	color: #047dd2;
+}
+.mainBox .mainRight .zt{
+	margin-top: 20px;
+	width: 130px;
+	height: 55px;
+}
+.link{
+	width: 1000px;
+	height: 55px;
+	line-height: 55px;
+	margin-top: 10px;
+}
+.link a{
+	display: block;
+	margin:0px 4px;
+	float: right;
+}
+.link2{
+	width: 1000px;
+	height: 35px;
+	line-height: 35px;
+	margin-top: 10px;
+	background-color: #ddd;
+	color: #333;
+	font-weight: bold;
+	font-size: 16px;
+}
+.link2 .linkleft{
+	width: 450px;
+	height: 35px;
+	float: left;
+}
+.link2 .linkleft .chang{
+	width: 180px;
+}
+.link2 .linkleft select{
+	font-weight: 400;
+	height: 22px;
+	font-size: 12px;
+	width: 140px;
+	margin-left: 20px;
+}
+.link2 .linkright{
+	position: relative;
+	float: right;
+	width: 550px;
+	height: 35px;
+}
+.link2 .linkright ul{
+	height: 35px;
+	list-style: none;
+}
+.link2 .linkright ul li{
+	position: relative;
+	display: inline-block;
+	width: 100px;
+	display: block;
+	height: 35px;
+	float: left;
+	line-height: 35px;
+	margin-left: 27px;
+}
+.link2 .linkright ul li ul.erwei1{
+	z-index: 10;
+	position: absolute;
+	top: -150px;
+	left: -65px;
+	display: none;
+}
+.link2 .linkright ul li ul.erwei2{
+	position: absolute;
+	top: -150px;
+	left: -28px;
+	display: none;
+}
+.foot{
+	width: 100%;
+	height: 35px;
+	background-color: #627FBE;
+}
+.foot .footer{
+	width: 1000px;
+	height: 35px;
+	text-align: center;
+	line-height: 17px;
+	background-color: #2E54A8;
+	font-size: 12px;
+	color: #9D9D9D;
+}
+.foot .footer span{
+	color: #FFFFFF;
+}

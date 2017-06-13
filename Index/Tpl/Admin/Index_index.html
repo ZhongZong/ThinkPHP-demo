@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>后台首页</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/admin.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/iconfont.css">
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		
+	
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand " href="{:U('Admin/Index/index')}">后台管理中心</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="{:U('Admin/Index/index')}"><span class="glyphicon glyphicon-home"></span>首页<span class="sr-only">(current)</span></a></li>
+        <li><a href="{:U('Index/Index/index')}" target="_blank"><span class="glyphicon glyphicon-th-list"></span>打开前台首页</a></li>
+      </ul>
+      <ul class="nav navbar-nav">
+      	<li><a href=""></a></li>
+      	<li><a href=""></a></li>
+      	<li><a href=""></a></li>
+      	<li><a href=""></a></li>
+      	<li><a href=""></a></li>
+      	<li><a href=""><span class="glyphicon glyphicon-heart"></span>欢迎登录后台管理系统</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span>用户名:<?php echo $_SESSION['username']; ?></a></li>
+        <li><a href="{:U('Admin/Common/logout')}"><span class="glyphicon glyphicon-off"></span>安全退出</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	
+	<div class="list-group" >
+	  <a href="{:U('Admin/Index/index')}" class="list-group-item active">
+	  <span class="glyphicon glyphicon-cloud"></span>
+	    版本信息
+	  </a>
+	  <a href="{:U('Admin/Index/logininfo')}" class="list-group-item">查看登录信息<span class="glyphicon glyphicon-eye-open"></span></a>
+	  <a href="{:U('Admin/Index/upnews')}" class="list-group-item">发布新闻<span class="glyphicon glyphicon-plus-sign"></span></a>
+	  <a href="{:U('Admin/Index/newslist')}" class="list-group-item">查看已发布新闻<span class="glyphicon glyphicon-list-alt"></span></a>
+	  <a href="{:U('Admin/Index/upfile')}" class="list-group-item">文件上传<span class="glyphicon glyphicon-upload"></span></a>
+	  <a href="{:U('Admin/Index/fileslist')}" class="list-group-item">查看已上传文件<span class="glyphicon glyphicon-file"></span></a>
+	  <a href="{:U('Admin/Index/messages')}" class="list-group-item">查看留言<span class="glyphicon glyphicon-envelope"></span></a>
+	  <a href="{:U('Admin/Login/change_password')}" class="list-group-item">密码修改<span class="glyphicon glyphicon-cog"></span></a>
+	</div>
+
+	<div class="main">
+		<ol class="breadcrumb">
+		<li>当前位置:</li>
+		<li class="active"><span class="glyphicon glyphicon-home">首页</li>
+		</ol>
+		<div class="media">
+		  <div class="media-left">
+		  	<i style="font-size:74px;" class="iconfont"><?php echo $weather['tianqi']; ?></i>
+		  </div>
+		  <div class="media-body" style="padding-left:50px;">
+		    <h4 class="media-heading" style="color:#5CB85C;">当前广汉天气</h4>
+		    <?php echo $weather['weather']; ?>&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $weather['WD']; ?>
+		    &nbsp;&nbsp;&nbsp;&nbsp;<?php echo $weather['WS']; ?><br />
+		    当前温度:<?php echo $weather['temp']; ?>°C<br />
+		    最低温度：<?php echo $weather['l_tmp']; ?>°C&nbsp;&nbsp;&nbsp;&nbsp;最高温度：<?php echo $weather['h_tmp']; ?>°C<br />
+		    <i style="font-size:40px;" class="iconfont">&#xe65c;</i>
+		    日出时间：<?php echo $weather['sunrise']; ?><br />
+		    <i style="font-size:40px;" class="iconfont">&#xe66d;</i>
+		    日落时间：<?php echo $weather['sunset']; ?>
+		  </div>
+		</div>
+		<h2 style="color:#5CB85C;">使用的技术</h2>
+		<h3>Thinkphp<span class="label label-primary">3.2.3</span></h3>
+		<h3>bootsrap<span class="label label-primary">3.1</span></h3>
+		<h3>HTML+CSS+CSS3+JS+JUQERY+HTML5+MySQL</h3>
+		<h2 style="color:#F0AD4E;">使用的软件</h2>
+		<h3>Wampserver <span class="label label-primary">2.2</span></h3>
+		<h3>Sublime Text <span class="label label-primary">3.1</span></h3>
+		<h3>Navicat for MySQL <span class="label label-primary">11.1.13</span></h3>
+	</div>
+	
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+.list-group{
+	margin-left: -60px;
+	width: 180px;
+	margin-top: 60px;
+}
+.list-group a span{
+	float: right;
+}
+.navbar-brand img{
+	margin-top: -10px;
+}
+.main{
+	width: 1000px;
+	min-height: 600px;
+	float: right;
+	margin-top: -340px;
+	margin-right: -40px;
+}
+.panel{
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+form#changpwd{
+	margin-top: 30px;
+	margin-left: 0px;
+}

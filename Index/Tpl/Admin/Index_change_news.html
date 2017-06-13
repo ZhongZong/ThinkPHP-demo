@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新闻修改</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/admin.css">
+	<link rel="stylesheet" href="__PUBLIC__/css/iconfont.css">
+	<script type="text/javascript" src="__PUBLIC__/js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		
+	
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand " href="{:U('Admin/Index/index')}">后台管理中心</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="{:U('Admin/Index/index')}"><span class="glyphicon glyphicon-home"></span>首页<span class="sr-only">(current)</span></a></li>
+        <li><a href="{:U('Index/Index/index')}" target="_blank"><span class="glyphicon glyphicon-th-list"></span>打开前台首页</a></li>
+      </ul>
+      <ul class="nav navbar-nav">
+      	<li><a href=""></a></li>
+      	<li><a href=""></a></li>
+      	<li><a href=""></a></li>
+      	<li><a href=""></a></li>
+      	<li><a href=""></a></li>
+      	<li><a href=""><span class="glyphicon glyphicon-heart"></span>欢迎登录后台管理系统</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span>用户名:<?php echo $_SESSION['username']; ?></a></li>
+        <li><a href="{:U('Admin/Common/logout')}"><span class="glyphicon glyphicon-off"></span>安全退出</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	
+	<div class="list-group" >
+	  <a href="{:U('Admin/Index/index')}" class="list-group-item">
+	  <span class="glyphicon glyphicon-cloud"></span>
+	    版本信息
+	  </a>
+	  <a href="{:U('Admin/Index/logininfo')}" class="list-group-item">查看登录信息<span class="glyphicon glyphicon-eye-open"></span></a>
+	  <a href="{:U('Admin/Index/upnews')}" class="list-group-item">发布新闻<span class="glyphicon glyphicon-plus-sign"></span></a>
+	  <a href="{:U('Admin/Index/newslist')}" class="list-group-item active">查看已发布新闻<span class="glyphicon glyphicon-list-alt"></span></a>
+	  <a href="{:U('Admin/Index/upfile')}" class="list-group-item">文件上传<span class="glyphicon glyphicon-upload"></span></a>
+	  <a href="{:U('Admin/Index/fileslist')}" class="list-group-item">查看已上传文件<span class="glyphicon glyphicon-file"></span></a>
+	  <a href="{:U('Admin/Index/messages')}" class="list-group-item">查看留言<span class="glyphicon glyphicon-envelope"></span></a>
+	  <a href="{:U('Admin/Login/change_password')}" class="list-group-item">密码修改<span class="glyphicon glyphicon-cog"></span></a>
+	</div>
+
+	<div class="main">
+		<ol class="breadcrumb">
+		<li>当前位置:</li>
+		<li><a href="{:U('Admin/Index/index')}"><span class="glyphicon glyphicon-home">首页</a></li>
+		<li><a href="{:U('Admin/Index/newslist')}"><span class="glyphicon glyphicon-list-alt"></span>查看已发布新闻</a></li>
+		<li class="active"><span class="glyphicon glyphicon-edit">新闻修改</span></li>
+		</ol>
+		<foreach name="result" item="v">
+		<form method='post' action="{:U('Admin/Index/changenews_check')}" class="form-horizontal" style="margin-top:50px;">
+		  <div class="form-group" style="margin-top:20px;display:none;">
+		    <label class="col-sm-2 control-label">标题</label>
+		    <div class="col-sm-4">
+		      <input type="text" id="id" name="id" class="form-control" value="{$v['id']}" placeholder="标题">
+		    </div>
+		  </div>
+		  <div class="form-group" style="margin-top:20px;">
+		    <label class="col-sm-2 control-label">标题</label>
+		    <div class="col-sm-4">
+		      <input type="text" id="name" name="title" class="form-control" value="{$v['title']}" placeholder="标题">
+		    </div>
+		  </div>
+		  <div class="form-group" style="margin-top:20px;">
+			    <label class="col-sm-2 control-label">内容</label>
+			    <div class="col-sm-8">
+			      <textarea class="form-control" rows="12" name="content" placeholder="正文">{$v['content']}</textarea>
+			    </div>
+		  </div>
+		  <div class="form-group" style="margin-top:20px;">
+		    <label class="col-sm-2 control-label">来源</label>
+		    <div class="col-sm-2">
+		      <input type="text" id="name" name="source" class="form-control" value="{$v['source']}"  placeholder="来源">
+		    </div>
+		  </div>
+		  <div class="form-group" style="margin-top:20px;">
+		    <label class="col-sm-2 control-label">发布人</label>
+		    <div class="col-sm-2">
+		      <input type="text" name="author" class="form-control" value="{$v['author']}" placeholder="编者">
+		    </div>
+		  </div>
+		  <div class="form-group" style="margin-top:20px;">
+		    <div class="col-sm-offset-2 col-sm-4">
+		    <p class="help-block"></p>
+		      <input type="submit" id="submit" class="btn btn-primary" value="确定修改"/>
+		      <a  role="button" onclick="javascript:history.back(-1);" class="btn btn-success" style="float:right;">取消修改</a>
+		    </div>
+		  </div>
+		</form>
+		</foreach>
+	</div>
+	
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+.files{
+	width: 1000px;
+	height: 635px;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
+table{
+	margin-top: 10px;
+}
+table th{
+	text-align: center;
+}
+table td{
+	text-align: left;
+	font-size: 12px;
+	font-weight: bold;
+}
+.messages{
+	position: relative;
+	width: 1000px;
+	height: 635px;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
+.messages h2{
+	color: #2E54A8;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 0px;
+	padding-top: 10px;
+}
+.messages form{
+	margin-top: 20px;
+}
+.header{
+	overflow: hidden;
+}
+.pagination{
+	position: absolute;
+	margin-top: 0px;
+}
