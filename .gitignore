@@ -2,4 +2,4 @@
 Index/Runtime/Logs/*
 Index/Runtime/Cache/*
 Index/Runtime/Data/*
-Index/Runtime/Temp/*
+#Index/Runtime/Temp/*
